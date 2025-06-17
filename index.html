@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Metadata untuk halaman JagaXxx -->
+    <title>JagaXxx — Komunitas Discord</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="JagaXxx adalah komunitas Discord seru untuk ngobrol, mabar, dan diskusi web development. Gabung sekarang dan jadi bagian dari obrolan seru!">
+    <link rel="icon" href="src/favico.ico" type="image/x-icon">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://jagaxxx.vercel.app/">
+    <meta property="og:title" content="JagaXxx — Komunitas Discord Ngobrol, Game, dan Coding">
+    <meta property="og:description" content="Gabung server Discord JagaXxx dan temukan teman ngobrol, partner mabar, dan komunitas coding yang seru!">
+    <meta property="og:image" content="https://jagaxxx.vercel.app/src/jagaxxx.gif">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://jagaxxx.vercel.app/">
+    <meta name="twitter:title" content="JagaXxx — Komunitas Discord Ngobrol, Game, dan Coding">
+    <meta name="twitter:description" content="Gabung server Discord JagaXxx dan temukan teman ngobrol, partner mabar, dan komunitas coding yang seru!">
+    <meta name="twitter:image" content="https://jagaxxx.vercel.app/jagaxxx.jpg">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.mi.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex-shrink-0 flex items-center">
+                    <span class="text-2xl font-bold text-indigo-600">Jaga<span class="text-indigo-400">Xxx</span></span>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#home" class="text-gray-900 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium smooth-scroll">Home</a>
+                        <a href="#features" class="text-gray-900 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium smooth-scroll">Fitur</a>
+                        <a href="#testimonials" class="text-gray-900 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium smooth-scroll">Testimoni</a>
+                        <a href="#faq" class="text-gray-900 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium smooth-scroll">FAQ</a>
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <a href="https://discord.gg/p6TTaAbs" target="_blank" class="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700">
+                        Gabung Sekarang
+                    </a>
+                </div>
+                <div class="-mr-2 flex md:hidden">
+                    <button type="button" class="mobile-menu-button inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500" aria-controls="mobile-menu" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile menu -->
+        <div class="mobile-menu hidden md:hidden" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#home" class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:text-indigo-600 hover:bg-gray-50 smooth-scroll">Home</a>
+                <a href="#features" class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:text-indigo-600 hover:bg-gray-50 smooth-scroll">Fitur</a>
+                <a href="#testimonials" class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:text-indigo-600 hover:bg-gray-50 smooth-scroll">Testimoni</a>
+                <a href="#faq" class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:text-indigo-600 hover:bg-gray-50 smooth-scroll">FAQ</a>
+                <a href="https://discord.gg/p6TTaAbs" target="_blank" class="block px-3 py-2 rounded-md text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700">
+                    Gabung Sekarang
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-gradient text-white min-h-screen flex items-center pt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="animate-on-scroll">
+                    <h1 class="text-4xl md:text-6xl font-bold mb-6 animate__animated animate__fadeInDown">Selamat Datang di <span class="text-indigo-200">JagaXxx</span></h1>
+                    <p class="text-xl md:text-2xl mb-8 text-indigo-100 animate__animated animate__fadeIn animate__delay-1s">Komunitas seru buat kamu yang pengen ngobrol, main bareng, atau sekadar nongkrong online!</p>
+                    <div class="flex flex-col sm:flex-row gap-4 animate__animated animate__fadeIn animate__delay-2s">
+                        <a href="https://discord.gg/p6TTaAbs" target="_blank" class="btn-primary px-8 py-4 rounded-full text-lg font-semibold text-center">
+                            Gabung Discord Sekarang <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                        <a href="#features" class="px-8 py-4 rounded-full text-lg font-semibold text-center border-2 border-white text-white hover:bg-white hover:text-indigo-600 transition-all smooth-scroll">
+                            Jelajahi Fitur
+                        </a>
+                    </div>
+                </div>
+                <div class="animate-on-scroll">
+                    <div class="glass-card p-6 rounded-3xl">
+                        <img src="src/jagaxxx.gif" alt="Discord Community" class="rounded-2xl shadow-2xl">
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-16 animate__animated animate__fadeIn animate__delay-3s">
+                <a href="#features" class="scroll-down inline-block text-white text-2xl smooth-scroll">
+                    <i class="fas fa-chevron-down"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 animate-on-scroll">Kenapa Harus Gabung di <span class="text-indigo-600">JagaXxx</span>?</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto animate-on-scroll">Temukan berbagai fitur seru yang bakal bikin kamu betah nongkrong di server kami</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Feature 1 -->
+                <div class="glass-card p-8 rounded-2xl text-center hover:shadow-xl transition-all animate-on-scroll">
+                    <div class="feature-icon">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-900">🎮 Game Bareng</h3>
+                    <p class="text-gray-600">Main game bareng member lainnya dengan event rutin dan turnamen seru!</p>
+                </div>
+                
+                <!-- Feature 2 -->
+                <div class="glass-card p-8 rounded-2xl text-center hover:shadow-xl transition-all animate-on-scroll" style="transition-delay: 0.1s">
+                    <div class="feature-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-900">💬 Chat Seru</h3>
+                    <p class="text-gray-600">Ngobrol seru dengan topik-topik menarik dan komunitas yang ramah!</p>
+                </div>
+                
+                <!-- Feature 3 -->
+                <div class="glass-card p-8 rounded-2xl text-center hover:shadow-xl transition-all animate-on-scroll" style="transition-delay: 0.2s">
+                    <div class="feature-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-900">📣 Event Rutin</h3>
+                    <p class="text-gray-600">Event seru setiap minggu dengan hadiah menarik untuk member aktif!</p>
+                </div>
+                
+                <!-- Feature 4 -->
+                <div class="glass-card p-8 rounded-2xl text-center hover:shadow-xl transition-all animate-on-scroll" style="transition-delay: 0.3s">
+                    <div class="feature-icon">
+                        <i class="fas fa-gift"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-900">🎁 Giveaway</h3>
+                    <p class="text-gray-600">Kesempatan menang hadiah menarik setiap bulannya untuk member aktif!</p>
+                </div>
+            </div>
+            
+            <div class="text-center mt-16 animate-on-scroll">
+                <a href="https://discord.gg/p6TTaAbs" target="_blank" class="btn-primary px-8 py-4 rounded-full text-lg font-semibold inline-block">
+                    Gabung Sekarang dan Nikmati Semua Fiturnya <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Parallax Section 
+    <section class="parallax py-32 relative" style="background-image: url('https://images.unsplash.com/photo-1639762681057-1e71eab1f5b0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');">
+        <div class="absolute inset-0 bg-indigo-900/70"></div>
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-6 animate-on-scroll">Lebih dari 10.000 Member Sudah Bergabung!</h2>
+            <p class="text-xl text-indigo-100 mb-8 animate-on-scroll">Bergabunglah dengan komunitas yang terus berkembang dan penuh dengan aktivitas seru setiap harinya.</p>
+            <div class="flex justify-center animate-on-scroll">
+                <div class="bg-white/20 backdrop-blur-md rounded-full p-4 flex items-center">
+                    <div class="bg-white rounded-full p-2 mr-4">
+                        <i class="fas fa-users text-indigo-600 text-2xl"></i>
+                    </div>
+                    <div class="text-left">
+                        <p class="text-white text-sm">Total Member</p>
+                        <p class="text-white text-2xl font-bold">10,000+</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 animate-on-scroll">Apa Kata <span class="text-indigo-600">Member Kami</span>?</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto animate-on-scroll">Dengar langsung pengalaman mereka yang sudah bergabung dengan JagaXxx</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card bg-white p-8 rounded-2xl shadow-md animate-on-scroll">
+                    <div class="flex items-center mb-6">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="User" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold text-gray-900">Sarah K.</h4>
+                            <p class="text-indigo-600 text-sm">Member sejak 2025</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">"Server JagaXxx bener-bener bikin betah! Dari game bareng sampe ngobrol random selalu seru. Adminnya juga responsif banget."</p>
+                    <div class="text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card bg-white p-8 rounded-2xl shadow-md animate-on-scroll" style="transition-delay: 0.1s">
+                    <div class="flex items-center mb-6">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="User" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold text-gray-900">Budi W.</h4>
+                            <p class="text-indigo-600 text-sm">Member sejak 2025</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">"Giveaway-nya sering banget dan beneran legit! Udah menang 2x padahal baru gabung. Komunitasnya juga friendly semua."</p>
+                    <div class="text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card bg-white p-8 rounded-2xl shadow-md animate-on-scroll" style="transition-delay: 0.2s">
+                    <div class="flex items-center mb-6">
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="User" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold text-gray-900">Dewi L.</h4>
+                            <p class="text-indigo-600 text-sm">Member sejak 2025</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">"Event game barengnya seru banget! Dari Valorant sampe Mobile Legends ada. Bisa ketemu temen-temen baru yang asik juga."</p>
+                    <div class="text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 animate-on-scroll">Pertanyaan yang <span class="text-indigo-600">Sering Ditanyakan</span></h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto animate-on-scroll">Temukan jawaban untuk pertanyaan umum tentang server JagaXxx</p>
+            </div>
+            
+            <div class="space-y-4">
+                <!-- FAQ 1 -->
+                <div class="border border-gray-200 rounded-xl overflow-hidden animate-on-scroll">
+                    <button class="faq-toggle w-full flex justify-between items-center p-6 text-left hover:bg-gray-50 transition-all">
+                        <span class="text-lg font-medium text-gray-900">Apa itu server JagaXxx?</span>
+                        <i class="fas fa-chevron-down text-indigo-600 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-6 pt-0">
+                        <p class="text-gray-600">JagaXxx adalah komunitas Discord yang fokus pada kegiatan gaming, obrolan santai, dan event-event seru. Kami menyediakan tempat untuk kamu bermain game bareng, ngobrol seru, dan mendapatkan teman baru.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ 2 -->
+                <div class="border border-gray-200 rounded-xl overflow-hidden animate-on-scroll" style="transition-delay: 0.1s">
+                    <button class="faq-toggle w-full flex justify-between items-center p-6 text-left hover:bg-gray-50 transition-all">
+                        <span class="text-lg font-medium text-gray-900">Bagaimana cara bergabung?</span>
+                        <i class="fas fa-chevron-down text-indigo-600 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-6 pt-0">
+                        <p class="text-gray-600">Klik tombol "Gabung Discord Sekarang" di bagian manapun di website ini. Kamu akan diarahkan ke halaman invite server kami. Pastikan kamu sudah memiliki akun Discord terlebih dahulu.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ 3 -->
+                <div class="border border-gray-200 rounded-xl overflow-hidden animate-on-scroll" style="transition-delay: 0.2s">
+                    <button class="faq-toggle w-full flex justify-between items-center p-6 text-left hover:bg-gray-50 transition-all">
+                        <span class="text-lg font-medium text-gray-900">Apakah ada biaya untuk bergabung?</span>
+                        <i class="fas fa-chevron-down text-indigo-600 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-6 pt-0">
+                        <p class="text-gray-600">Tidak sama sekali! Server JagaXxx sepenuhnya gratis untuk semua orang. Kami hanya meminta kamu untuk mengikuti rules yang ada dan menjadi member yang baik.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ 4 -->
+                <div class="border border-gray-200 rounded-xl overflow-hidden animate-on-scroll" style="transition-delay: 0.3s">
+                    <button class="faq-toggle w-full flex justify-between items-center p-6 text-left hover:bg-gray-50 transition-all">
+                        <span class="text-lg font-medium text-gray-900">Game apa saja yang sering dimainkan?</span>
+                        <i class="fas fa-chevron-down text-indigo-600 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-6 pt-0">
+                        <p class="text-gray-600">Kami memiliki channel untuk berbagai game populer seperti Valorant, Mobile Legends, Genshin Impact, Apex Legends, dan banyak lagi. Kamu juga bisa mengusulkan game favoritmu untuk dimainkan bareng!</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ 5 -->
+                <div class="border border-gray-200 rounded-xl overflow-hidden animate-on-scroll" style="transition-delay: 0.4s">
+                    <button class="faq-toggle w-full flex justify-between items-center p-6 text-left hover:bg-gray-50 transition-all">
+                        <span class="text-lg font-medium text-gray-900">Bagaimana dengan event dan giveaway?</span>
+                        <i class="fas fa-chevron-down text-indigo-600 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-6 pt-0">
+                        <p class="text-gray-600">Kami mengadakan event game bareng setiap minggu dan giveaway setiap bulannya. Syarat utamanya adalah kamu harus aktif di server dan mengikuti rules yang berlaku. Info lengkap bisa dilihat di channel #announcement.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 hero-gradient">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-6 animate-on-scroll">Siap Bergabung dengan <span class="text-indigo-200">Komunitas Kami</span>?</h2>
+            <p class="text-xl text-indigo-100 mb-8 animate-on-scroll">Jangan lewatkan keseruan dan keuntungan menjadi bagian dari JagaXxx. Gabung sekarang juga!</p>
+            <div class="animate-on-scroll">
+                <a href="https://discord.gg/p6TTaAbs" target="_blank" class="btn-primary px-8 py-4 rounded-full text-lg font-semibold inline-block">
+                    Gabung Sekarang <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="md:col-span-2">
+                    <h3 class="text-2xl font-bold mb-4">Jaga<span class="text-indigo-400">Xxx</span></h3>
+                    <p class="text-gray-400">Komunitas Discord seru untuk ngobrol, main game bareng, dan nongkrong online. Bergabunglah dengan kami sekarang!</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Tautan Cepat</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-white transition-colors smooth-scroll">Home</a></li>
+                        <li><a href="#features" class="text-gray-400 hover:text-white transition-colors smooth-scroll">Fitur</a></li>
+                        <li><a href="#testimonials" class="text-gray-400 hover:text-white transition-colors smooth-scroll">Testimoni</a></li>
+                        <li><a href="#faq" class="text-gray-400 hover:text-white transition-colors smooth-scroll">FAQ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Sosial Media</h4>
+                    <div class="flex space-x-4">
+                        <a href="https://discord.gg/p6TTaAbs" class="social-icon text-gray-400 hover:text-white text-xl"><i class="fab fa-discord"></i></a>
+                        <a href="#" class="social-icon text-gray-400 hover:text-white text-xl"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon text-gray-400 hover:text-white text-xl"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon text-gray-400 hover:text-white text-xl"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 JagaXxx. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="fixed bottom-8 right-8 bg-indigo-600 text-white p-3 rounded-full shadow-lg opacity-0 invisible transition-all">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
